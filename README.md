@@ -54,6 +54,37 @@
 
 ---
 
+## 🎬 슬라이드 자동 생성 (`/notebooklm-slide`)
+
+Gemini의 **NotebookLM Slide Creator** 워크플로우를 사용하면 학습 문서를 **10장 발표 슬라이드**로 자동 변환할 수 있습니다.
+
+### 사용법
+
+Gemini 채팅에서 아래와 같이 입력합니다:
+
+```
+@/notebooklm-slide 사용해서 study/robert/01_ros2_intro.md 파일을 01ppt.md로 작성해 주세요
+```
+
+### 출력 구성
+
+| 섹션 | 내용 |
+|------|------|
+| 📊 소스 분석 요약 | 핵심 주제, 메시지, 대상 청중, 포맷, 시간 |
+| 🎨 디자인 컨셉 | 색상 팔레트, 타이포그래피, 레이아웃 가이드 |
+| 📝 슬라이드 스크립트 | 슬라이드별 내용 + 시각적 제안 (10장) |
+
+### 생성된 슬라이드
+
+| 소스 파일 | 슬라이드 파일 |
+|-----------|---------------|
+| `study/robert/01_ros2_intro.md` | [`01ppt.md`](study/robert/01ppt.md) |
+| `study/robert/02_ros2_required_knowledge.md` | [`02ppt.md`](study/robert/02ppt.md) |
+| `study/robert/03_ros2_dev_environment_setup.md` | [`03ppt.md`](study/robert/03ppt.md) |
+| `study/robert/04_why_ros2.md` | [`04ppt.md`](study/robert/04ppt.md) |
+
+---
+
 ## 🔗 관련 리소스
 *   [ROS 2 공식 문서 (Jazzy)](https://docs.ros.org/en/jazzy/)
 *   [ROBOTIS TurtleBot3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
